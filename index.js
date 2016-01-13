@@ -58,7 +58,7 @@ shulker.on("ready", function() {
 
 shulker.on("message", function (message) {
     if(message.author.id !== shulker.user.id) {
-        data = { text: "<"+message.author.username+"> "+message.content };
+        data = { text: "\u00A77[\u00A78Discord\u00A77]"+message.author.username+"\u00A76:\u00A7f "+message.content };
         client.send('tellraw @a ["",'+JSON.stringify(data)+']');
     }
 });
